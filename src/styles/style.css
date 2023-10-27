@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body{
     /*background-color: bisque;*/
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 header {
     background-color: white;
     display: flex;
@@ -23,6 +26,7 @@ nav{
 
 }
 
+
 .navegacion{
     /*background-color: aqua;*/
     font-size: 25px;
@@ -30,9 +34,11 @@ nav{
     gap: 30px;
 }
 
+
 li{
     list-style: none;
 }
+
 
 .portada{
     height: 850px;
@@ -43,6 +49,7 @@ li{
     gap: 25px;
 }
 
+
 h1{
     font-size: 80px;
     font-weight:lighter;
@@ -50,11 +57,13 @@ h1{
     text-align: center;
 }
 
+
 .texto1{
     font-size: 35px;
     color: white;
     text-align: center;
 }
+
 
 h2 {
     text-align: center;
@@ -66,6 +75,7 @@ h2 {
     padding-bottom: 15px;
 }
 
+
 .contenido1 {
     display: flex;
     justify-content: space-evenly;
@@ -75,6 +85,7 @@ h2 {
     
 }
 
+
 .figura{
     display: flex;
     flex-direction: column;
@@ -82,17 +93,20 @@ h2 {
     gap: 25px;
 }
 
+
 .figura h3 {
     text-align: center;
     color:#00B172;
     font-size: 30px;
 }
 
+
 .figura p{
     font-size: 25px;
     color: black;
     text-align: center;
 }
+
 
 .contenido2 {
     height: 800px;
@@ -105,10 +119,12 @@ h2 {
     
 }
 
+
 .contenido3 {
     display: flex;
     justify-content: space-between;
 }
+
 
 .contenido2 h3 {
     color: white;
@@ -116,6 +132,7 @@ h2 {
     text-decoration: underline;
     text-align: left;
 }
+
 
 .contenedor-texto {
     display: flex;
@@ -125,10 +142,12 @@ h2 {
 
 }
 
+
 h4 {
     color: white;
     font-size: 30px;
 }
+
 
 .texto2 {
     text-align: left;
@@ -136,10 +155,13 @@ h4 {
     font-size: 25px;
 }
 
+
 .orienta-imagen{
     display: flex;
     align-items: center;
 }
+
+
 footer{
     text-align: center;
 }
