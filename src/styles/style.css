@@ -18,6 +18,7 @@ header {
     padding: 15px 40px;
     position: fixed;
     width: 100%;
+    gap: 30px;
 }
 
 
@@ -32,7 +33,7 @@ nav{
 .navegacion{
     /*background-color: aqua;*/
     font-size: 25px;
-    display: flex;
+    display: none;
     gap: 30px;  
 }
 
@@ -51,6 +52,12 @@ a{
     color: black;
     text-decoration: none;
 }
+
+
+.navegacion-sandwich input{
+    display: none;
+}
+
 
 .portada{
     height: 850px;
@@ -121,7 +128,7 @@ h2 {
 
 
 .contenido2 {
-    height: 800px;
+    height: auto;
     background-color: #00B172;
     margin-left: 35px;
     margin-right: 35px;
@@ -135,7 +142,7 @@ h2 {
 .contenido3 {
     display: flex;
     justify-content: space-between;
-    height: 800px;
+    height: auto;
 }
 
 
@@ -178,3 +185,152 @@ h4 {
 footer{
     text-align: center;
 }
+
+@media (min-width: 800px){
+    .navegacion{
+        display: flex;
+    }
+
+    .navegacion-sandwich{
+        display: none;
+    }
+
+}
+
+@media (max-width: 799.25px) {
+    .navegacion-sandwich{
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 2px solid;
+        border-radius: 5px;
+        height: auto;
+        width: 50px;
+    }
+
+    .navegacion-sandwich label {
+        width: 47px;
+        text-align: center;
+    }
+
+
+    .navegacion-sandwich label:hover {
+        background-color: gray;
+    }
+
+    .navegacion-sandwich input:checked ~ label{
+        background-color: lightgrey;
+    }
+
+    .contenido2{
+        padding-inline: 30px;
+        padding-block: 25px;
+    }
+
+    .contenido2 h3{
+        font-size: 30px;
+    }
+    
+    .contenido3{
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .contenedor-texto{
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .contenedor-texto h4{
+        font-size: 20px;
+    }
+
+    .contenedor-texto p{
+        font-size: 20px;
+    }
+
+    .orienta-imagen img{
+        height: 70px;
+        width: auto;
+    }
+
+    .img-kanye{
+        height: 400px;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 705px) {
+    .portada h1{
+        font-size: 40px
+    }
+
+    .portada p{
+        font-size: 25px
+    }
+
+    main h2{
+        font-size: 30px
+    }
+
+    .contenido1{
+        padding-block: 35px;
+    }
+
+
+    .figura img{
+        width: 100px;
+        height: auto;
+    }
+
+    .figura h3{
+        font-size: 20px
+    }
+
+    .figura p{
+        font-size: 15px
+    }
+
+    .contenido2{
+        padding-inline: 15px;
+        padding-block: 10px;
+        margin-inline: 15px;
+        
+    }
+
+    .contenido2 h3{
+        text-align: center;
+    }
+
+    .contenido3{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+}
+
+@media (max-width: 400px){
+    header img{
+        width: 200px;
+        height: auto;
+    }
+
+    .contenido1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .figura{
+        gap: 5px;
+    }
+
+    
+
+}
+
+
